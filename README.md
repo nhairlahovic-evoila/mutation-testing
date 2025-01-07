@@ -111,9 +111,9 @@ To achieve 100% code coverage and mutation coverage in this case, you need to co
 ```java
 @Test
 public void testAddition() {
-Calculator calculator = new Calculator();
-int result = calculator.add(2, 3);
-assertEquals(5, result);
+    Calculator calculator = new Calculator();
+    int result = calculator.add(2, 3);
+    assertEquals(5, result);
 }
 ```
 
@@ -140,8 +140,18 @@ The list of mutators used during mutation testing can be configured in the `pom.
 PITest provides options to customize testing, such as limiting mutants per class with `maxMutationsPerClass`. For more details, refer to the official [Maven quickstart guide](https://pitest.org/quickstart/maven/).
 
 
+### Using Mutation Testing in Build Pipelines
 
+Integrating mutation testing into build pipelines can enhance test quality by ensuring that changes in the codebase are adequately validated. Tools like PITest can be configured to run as part of Continuous Integration (CI) processes, automatically generating mutation reports after each build.
 
+Mutation testing is naturally resource and time-intensive. It requires executing a large number of tests for each mutation introduced, which can significantly increase the overall build time. As a result, it’s essential to strategically decide where and when to use mutation testing, focusing on critical areas of the codebase to maximize its benefits.
+
+The author of PITest recommends a more targeted approach to mutation testing. Instead of running it against the entire codebase in a CI job—which can become resource-intensive as the codebase grows—run it frequently on the code you are actively working on during development. This can be done locally or integrated into pull requests using tools like [arcmutate](https://www.arcmutate.com/). For a detailed guide, refer to the author's blog post: [Don't Let Your Code Dry](https://blog.pitest.org/dont-let-your-code-dry/).
+
+### Conclusion
+
+Mutation testing is a great tool for detecting defects in code, ensuring that tests validate actual behavior effectively.
+It is not a replacement for code coverage but a complementary method. Use it wisely, as it can be resource-intensive, and focus on critical areas to maximize its benefits.
 
 
 
