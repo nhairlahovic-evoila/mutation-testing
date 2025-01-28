@@ -1,4 +1,8 @@
-# Mutation Testing in Java
+# Mutation Testing in Java: Supercharge Your Test Suite
+
+Author: **Nedim Hairlahović**
+
+Hashtags: **#java #testing #mutationtesting #codequality**
 
 ## Introduction
 
@@ -101,6 +105,8 @@ This will generate a detailed report in the `target/pit-reports` directory, show
 
 
 <img width="885" alt="Screenshot 2025-01-05 at 21 09 12" src="https://github.com/user-attachments/assets/02269eb2-bbba-4304-ba88-1584b37e5570" />
+
+Caption: _Generated Mutation Testing Report: Survived Mutations_
 
 
 This report shows two mutations in the add method of the Calculator class that survived testing. These include replacing addition with subtraction and replacing the return value with 0. For more details about the PITest mutators, you can check the official [documentation page](https://pitest.org/quickstart/mutators/) link.
