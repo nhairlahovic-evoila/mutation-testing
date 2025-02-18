@@ -101,7 +101,7 @@ To run mutation testing with PITest, execute the following Maven command:
 mvn org.pitest:pitest-maven:mutationCoverage
 ```
 
-This will generate a detailed report in the `target/pit-reports` directory, showing killed mutants and surviving mutants. We can check the `com.baeldung.testing.mutation/Calculator.java.html` report for more details about the mutants created:
+This will generate a detailed report in the `target/pit-reports` directory, showing killed mutants and surviving mutants. We can check the `Calculator.java.html` report for more details about the mutants created:
 
 
 <img width="885" alt="Screenshot 2025-01-05 at 21 09 12" src="https://github.com/user-attachments/assets/02269eb2-bbba-4304-ba88-1584b37e5570" />
